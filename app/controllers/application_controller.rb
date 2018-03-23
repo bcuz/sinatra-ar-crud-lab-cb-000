@@ -8,6 +8,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/' do
+    erb :index
   end
 
   get '/posts/new' do
@@ -57,6 +58,6 @@ class ApplicationController < Sinatra::Base
 
     @post.destroy
     erb :show
-    
+
   end
 end
